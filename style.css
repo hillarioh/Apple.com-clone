@@ -6,28 +6,29 @@
 
 body {
   font-family: "Manjari", sans-serif;
-  background-image: url(./images/main-back.jpg);
-  background-position-y: 72.5%;
-  background-position-x: 45%;
-  background-repeat: no-repeat;
-  margin-top: 0;
 }
 
-.container {
+.section1 {
+  background-image: url(./images/main-back.jpg);
+  background-position-y: 99.5%;
+  background-position-x: 45%;
+  background-repeat: no-repeat;
+  margin: -8px;
+  height: 34em;
   position: relative;
 }
 
 .header {
-  margin: 0 5%;
+  margin: 0 15%;
   border-radius: 5px;
   background: radial-gradient(#606060, #9c9999);
   display: flex;
   position: relative;
-  top: 80px;
+  top: 93px;
 }
 
 .col {
-  width: 10%;
+  width: 9%;
   padding: 10px 0;
   color: white;
   border-left: 1px solid black;
@@ -51,6 +52,7 @@ body {
   width: 207px;
   margin-left: 8px;
   height: 25px;
+  border: 1px solid #272727;
   border-radius: 13px;
   background: radial-gradient(#606060, #9c9999);
 }
@@ -59,15 +61,51 @@ body {
   align-self: center;
 }
 
-.container .section .section2 {
-  position: relative;
-  display: flex;
-  top: 30.8em;
-  margin-left: -5px;
-  margin-right: -5px;
+.header #form {
+  background: url(/web/20140301004259im_/http://images.apple.com/global/nav/images/globalsearch_field.png)
+    0 0 no-repeat;
 }
 
-.container .section .section2 .img {
+/* #password {
+  background: url(security.png) no-repeat scroll 0.5px 0.5px;
+  background-position: 98%;
+} */
+
+.section1 .article {
+  margin-top: -170px;
+  padding: 50px 0;
+}
+
+.article {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.article .img {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  height: 31px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.art-img a img {
+  height: 64px;
+  width: 980px;
+}
+
+.container .section2 {
+  display: flex;
+  margin: 10px -5px;
+}
+
+.container .section2 .img {
   height: 25%;
   width: 25%;
 }
@@ -75,11 +113,30 @@ body {
 footer {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 20px;
+  font-size: 12px;
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 footer .footer1 {
   display: flex;
   justify-content: space-between;
+  /* float: right; */
+}
+
+footer .footer1 ul {
+  display: flex;
+}
+
+footer .footer1 ul li {
+  padding: 0 5px;
+  list-style-type: none;
+  border-right: 1px solid gray;
+}
+
+footer .footer1 ul #country {
+  border-right: none;
 }
