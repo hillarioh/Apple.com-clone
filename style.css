@@ -145,6 +145,7 @@ footer .footer1 ul li {
   padding: 0 5px;
   list-style-type: none;
   border-right: 1px solid gray;
+  align-self: center;
 }
 
 footer .footer1 ul #country {

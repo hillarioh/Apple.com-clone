@@ -2,7 +2,7 @@
 
 > This project was to clone the mint.com account sign up page and is part of the HTML Forms section in the Microverse Curriculum.
 
-![screenshot](./mint.png)
+![screenshot](./apple-screenshot.png)
 
 This project contains the following features:
 
@@ -18,7 +18,7 @@ This project contains the following features:
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/hillarioh/Mint.com-Signup-Page-Clone/8e616a400aaed165863886b8cb91bd8275ae4240/index.html)
+[Live Demo Link](https://hillarioh.github.io/Apple.com-clone/)
 
 ## Author
 
@@ -30,7 +30,7 @@ This project contains the following features:
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/hillarioh/Mint.com-Signup-Page-Clone/issues).
+Feel free to check the [issues page](https://github.com/hillarioh/Apple.com-clone/issues).
 
 ## Show your support
 
