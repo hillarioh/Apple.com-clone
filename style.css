@@ -19,16 +19,18 @@ body {
 }
 
 .header {
-  margin: 0 15%;
+  margin: 0 auto 0 17%;
   border-radius: 5px;
   background: radial-gradient(#606060, #9c9999);
-  display: flex;
+  display: inline-flex;
   position: relative;
   top: 93px;
+  width: 60%;
+  justify-content: flex-end;
 }
 
 .col {
-  width: 9%;
+  min-width: 9%;
   padding: 10px 0;
   color: white;
   border-left: 1px solid black;
@@ -41,7 +43,7 @@ body {
   margin-left: -6px;
   margin-top: 2px;
   border-left: none;
-  width: 12%;
+  background-position-x: -73px;
 }
 
 .header .col9 {
@@ -49,8 +51,9 @@ body {
 }
 
 .header .form input {
-  width: 207px;
+  width: 146px;
   margin-left: 8px;
+  margin-right: 8px;
   height: 25px;
   border: 1px solid #272727;
   border-radius: 13px;
@@ -62,19 +65,15 @@ body {
 }
 
 .header #form {
-  background: url(/web/20140301004259im_/http://images.apple.com/global/nav/images/globalsearch_field.png)
+  background: url(http://images.apple.com/global/nav/images/globalsearch_field.png)
     0 0 no-repeat;
+  background-position: 2px 2px;
 }
 
 /* #password {
   background: url(security.png) no-repeat scroll 0.5px 0.5px;
   background-position: 98%;
 } */
-
-.section1 .article {
-  margin-top: -170px;
-  padding: 50px 0;
-}
 
 .article {
   position: absolute;
@@ -84,7 +83,12 @@ body {
   text-align: center;
 }
 
-.article .img {
+.section1 .article {
+  margin-top: -170px;
+  padding: 50px 0;
+}
+
+.article .art-img {
   position: relative;
   z-index: 10;
   overflow: hidden;
@@ -93,6 +97,13 @@ body {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+}
+
+.article h2 {
+  font-size: 3em;
+  line-height: 36px;
+  font-weight: 100;
+  color: white;
 }
 
 .art-img a img {
@@ -115,6 +126,7 @@ footer {
   flex-direction: column;
   font-size: 12px;
   padding: 10px;
+  margin: 0 100px;
 }
 
 footer a {
