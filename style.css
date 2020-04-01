@@ -23,68 +23,91 @@ body {
 }
 
 .header {
-  margin: 0 auto 0 17%;
-  border-radius: 5px;
   background: radial-gradient(#606060, #9c9999);
-  display: inline-flex;
   position: relative;
   top: 93px;
-  width: 60%;
-  justify-content: flex-end;
+  line-height: 39px;
+  margin-left: 12%;
+  max-width: 70%;
 }
 
-.col {
-  min-width: 9%;
-  padding: 10px 0;
-  color: white;
-  border-left: 1px solid black;
+.header ul {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0.2px 0.4px;
+  border: 1px solid #4c4c4c;
+  background: -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      from(rgba(0, 0, 0, 0.2)),
+      color-stop(0.05, rgba(0, 0, 0, 0)),
+      color-stop(0.97, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0.45))
+    ),
+    -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2))),
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC)
+      no-repeat 50% 50%,
+    -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+}
+
+.header ul li {
+  flex-grow: 1;
   text-align: center;
+  border-right: 1px solid #4c4c4c;
+  padding: 5px 5px;
+  line-height: 25px;
+  list-style-type: none;
 }
 
-.header .logo {
-  background: url(http://images.apple.com/global/nav/images/globalnav_text.svg)
-    no-repeat;
-  margin-left: -6px;
-  margin-top: 2px;
-  border-left: none;
-  background-position-x: -73px;
+footer a {
+  text-decoration: none;
 }
 
-.header .col9 {
-  border-right: 1px solid black;
+.header .col a {
+  text-decoration: none;
+  color: white;
 }
 
-.header .form input {
-  width: 146px;
-  margin-left: 8px;
-  margin-right: 8px;
-  height: 25px;
-  border: 1px solid #272727;
-  border-radius: 13px;
-  background: radial-gradient(#606060, #9c9999);
-}
-
-.header .form {
+footer .footer1 ul li {
+  padding: 0 5px;
+  list-style-type: none;
+  border-right: 1px solid gray;
   align-self: center;
 }
 
-.header #form {
-  background: url(http://images.apple.com/global/nav/images/globalsearch_field.png)
-    0 0 no-repeat;
-  background-position: 2px 2px;
+.header ul li:hover {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAkCAQAAADifZiHAAAAJ0lEQVQIW2P4L8zE8JeJ4R8q%2Bo%2BKCIH%2FjEA1TAyMSIgJRkIQM9BYAGa0Dj%2FXpUiAAAAAAElFTkSuQmCC")
+      repeat-x 0 0,
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAE0lEQVQIW2P8z8jAwMAIh0wICAAa0gETv9XXOgAAAABJRU5ErkJggg%3D%3D")
+      repeat-y 100% 0,
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAEklEQVQIW2P8L8TwDwn%2Bh0MGAKnjDAIoAAlcAAAAAElFTkSuQmCC")
+      repeat-y 0 0,
+    rgba(0, 0, 0, 0.4);
+}
+
+.header .col8 input {
+  width: 104px;
+  border-radius: 76px;
+  background: transparent;
+  border: 1px solid #646464;
+}
+
+.header .col8 svg {
+  font-size: 12px;
+  color: white;
+  margin-right: -24px;
 }
 
 .article {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 89px;
   right: 0;
   left: 0;
   text-align: center;
-}
-
-.section1 .article {
-  margin-top: -170px;
-  padding: 50px 0;
 }
 
 .article .art-img {
@@ -105,19 +128,15 @@ body {
   color: white;
 }
 
-.art-img a img {
-  height: 64px;
-  width: 980px;
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+  margin-top: 2px;
 }
 
-.container .section2 {
-  display: flex;
-  margin: 10px -5px;
-}
-
-.container .section2 .img {
-  height: 25%;
-  width: 25%;
+.bottom img {
+  width: 100%;
 }
 
 footer {
@@ -128,10 +147,6 @@ footer {
   margin: 0 100px;
 }
 
-footer a {
-  text-decoration: none;
-}
-
 footer .footer1 {
   display: flex;
   justify-content: space-between;
@@ -139,13 +154,6 @@ footer .footer1 {
 
 footer .footer1 ul {
   display: flex;
-}
-
-footer .footer1 ul li {
-  padding: 0 5px;
-  list-style-type: none;
-  border-right: 1px solid gray;
-  align-self: center;
 }
 
 footer .footer1 ul #country {
