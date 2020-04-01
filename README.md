@@ -17,7 +17,7 @@ This project contains the following features:
 
 ## Live Demo
 
-[Live Demo Link](https://hillarioh.github.io/Apple.com-clone/)
+[Live Demo Link](https://raw.githack.com/hillarioh/Apple.com-clone/appleBranch/index.html)
 
 ## Author
 
