@@ -18,6 +18,10 @@ body {
   position: relative;
 }
 
+.title {
+  display: none;
+}
+
 .header {
   margin: 0 auto 0 17%;
   border-radius: 5px;
@@ -69,11 +73,6 @@ body {
     0 0 no-repeat;
   background-position: 2px 2px;
 }
-
-/* #password {
-  background: url(security.png) no-repeat scroll 0.5px 0.5px;
-  background-position: 98%;
-} */
 
 .article {
   position: absolute;
@@ -136,7 +135,6 @@ footer a {
 footer .footer1 {
   display: flex;
   justify-content: space-between;
-  /* float: right; */
 }
 
 footer .footer1 ul {
