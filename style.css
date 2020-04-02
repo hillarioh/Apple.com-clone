@@ -16,6 +16,7 @@ body {
   margin: -8px;
   height: 34em;
   position: relative;
+  margin-top: -16px;
 }
 
 .title {
@@ -39,19 +40,7 @@ body {
   border-radius: 5px;
   box-shadow: 0.2px 0.4px;
   border: 1px solid #4c4c4c;
-  background: -webkit-gradient(
-      linear,
-      0 0,
-      0 100%,
-      from(rgba(0, 0, 0, 0.2)),
-      color-stop(0.05, rgba(0, 0, 0, 0)),
-      color-stop(0.97, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0.45))
-    ),
-    -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2))),
-    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC)
-      no-repeat 50% 50%,
-    -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+  background: -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
 }
 
 .header ul li {
@@ -80,13 +69,7 @@ footer .footer1 ul li {
 }
 
 .header ul li:hover {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAkCAQAAADifZiHAAAAJ0lEQVQIW2P4L8zE8JeJ4R8q%2Bo%2BKCIH%2FjEA1TAyMSIgJRkIQM9BYAGa0Dj%2FXpUiAAAAAAElFTkSuQmCC")
-      repeat-x 0 0,
-    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAE0lEQVQIW2P8z8jAwMAIh0wICAAa0gETv9XXOgAAAABJRU5ErkJggg%3D%3D")
-      repeat-y 100% 0,
-    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAEklEQVQIW2P8L8TwDwn%2Bh0MGAKnjDAIoAAlcAAAAAElFTkSuQmCC")
-      repeat-y 0 0,
-    rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .header .col8 input {
